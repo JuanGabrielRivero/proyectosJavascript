@@ -93,3 +93,93 @@
 
 
 // console.log(fruitProcessor(2, 5));
+
+
+// const calcAge = function (birthYear){
+//     return 2022 - birthYear;
+// }
+
+// const yearsUntilRetirement = function (birthYear, firstName) {
+//     const age = calcAge(birthYear);
+//     const retirement = 65 - age;
+
+//     if(retirement > 0){
+//         console.log(`${firstName} retires in ${retirement} years`);
+//         return retirement;
+//     }else{
+//         console.log(`${firstName} has already retired`);
+//         return "You are retired";
+//     }
+
+//     return retirement;
+// }
+
+// console.log(yearsUntilRetirement(1995, "Joanito"));
+// console.log(yearsUntilRetirement(1900, "Angel"));
+
+
+// function calcAge (birthYear, firstName){
+//     const age = 2022 - birthYear;
+//     console.log(`${firstName} is ${age} years old`);
+//     return age;
+// }
+
+// const age = calcAge(1995, "Joanito");
+
+
+// const friend1 = "Michael";
+// const friend2 = "Steven";
+// const friend3 = "Peter";
+
+// console.log(friend1, friend2, friend3);
+
+// const friends = ["Michael", "Steven", "Peter"];
+
+// console.log(friends);
+
+// const years = new Array(1991, 1984, 2008, 2020);
+// console.log(years);
+
+
+// console.log(friends[0]);
+// console.log(friends[2]);
+
+// console.log(friends.length);
+// console.log(friends[friends.length - 1]);
+
+// friends[0] = "Juan";
+// friends[1] = "Jay";
+// friends[2] = "Jhonas";
+// console.log(friends[0]);
+// console.log(friends[1]);
+// console.log(friends[2]);
+// console.log(friends);
+
+// // friends = ["Bob", "Alice"];
+
+// const firstName = "Juanito";
+// const juani = [firstName, "Rivero", 2022 - 1995, "developer", friends];
+// console.log(juani);
+// console.log(juani.length);
+// console.log(juani[3]);
+
+
+// const calcAge = function (birthYear){
+//     return 2022 - birthYear;
+// }
+
+
+// const years = [1998, 1967, 2002, 2010, 2018];
+
+
+// const age1 = calcAge((years[0]));
+// const age2 = calcAge((years[1]));
+// const age3 = calcAge(years[years.length - 1]);
+
+// console.log(age1, age2, age3);
+
+// //Same operation but now, all in an array
+
+// const ages = [calcAge((years[0])), calcAge((years[1])), calcAge(years[years.length - 1])];
+
+// console.log(ages);
