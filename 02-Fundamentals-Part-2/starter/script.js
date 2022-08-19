@@ -1,5 +1,7 @@
 "use strict";
 
+// const cleanupLogFiles = require("npm/lib/utils/cleanup-log-files");
+
 // let hasDriversLicense = false;
 // const passTest = true;
 
@@ -155,7 +157,7 @@
 // console.log(friends[2]);
 // console.log(friends);
 
-// // friends = ["Bob", "Alice"];
+// friends = ["Bob", "Alice"];
 
 // const firstName = "Juanito";
 // const juani = [firstName, "Rivero", 2022 - 1995, "developer", friends];
@@ -164,12 +166,12 @@
 // console.log(juani[3]);
 
 
-// const calcAge = function (birthYear){
-//     return 2022 - birthYear;
-// }
+const calcAge = function (birthYear){
+    return 2022 - birthYear;
+}
 
 
-// const years = [1998, 1967, 2002, 2010, 2018];
+const years = [1998, 1967, 2002, 2010, 2018];
 
 
 // const age1 = calcAge((years[0]));
@@ -178,8 +180,136 @@
 
 // console.log(age1, age2, age3);
 
-// //Same operation but now, all in an array
+// Same operation but now, all in an array
 
 // const ages = [calcAge((years[0])), calcAge((years[1])), calcAge(years[years.length - 1])];
 
 // console.log(ages);
+
+// const friends = ["Michael", "Steven", "Peter"];
+
+// //Add elements
+// const newLength = friends.push("Jay");
+// console.log(friends);
+// console.log(newLength);
+
+// friends.unshift("Jhon");
+// console.log(friends);
+
+
+// //Remove elements
+// friends.pop(); //Remove last
+// const popped = friends.pop(); //Remove last
+// console.log(popped);
+// console.log(friends);
+
+// friends.shift(); //Remove first
+// console.log(friends);
+
+// console.log(friends.indexOf("Steven"));
+// console.log(friends.indexOf("Lisa"));
+
+// console.log(friends.includes("Steven"));
+// console.log(friends.includes("Lisa"));
+// friends.push(23);
+// console.log(friends);
+// console.log(friends.includes("23"));
+// console.log(friends.includes(23));
+
+// if(friends.includes("Steven")){
+//     console.log("You have a friend called Steven");
+// }
+
+
+// const namesArray = [
+//     "Juan",
+//     "Rivero",
+//     2022-1995,
+//     "Developer",
+//     ["Michael", "Peter", "Steven"]
+// ];
+
+// const nombre = {
+//     firstName: "Juan",
+//     lastName: "Rivero",
+//     age: 2022 - 1995,
+//     job: "Developer",
+//     friends: ["Michael", "Peter", "Steven"]
+// };
+
+// console.log(namesArray);
+// console.table(nombre);
+
+// console.log(nombre);
+// console.log(nombre.lastName);
+// console.log(nombre.age);
+// console.log(nombre["lastName"]);
+
+// const nameKey = "Name";
+
+// console.log(nombre["first" + nameKey]);
+// console.log(nombre["last" + nameKey]);
+
+
+// const interestedIn =  prompt(`What do you want to know about Juan? Chose between firstName,
+//  lastName, age, job and friends`)
+// console.log(nombre[interestedIn]);
+
+// if (nombre[interestedIn]) {
+//     console.log(nombre[interestedIn]);
+// }else{
+//     prompt("Wrong request! Chose between firstName, lastName, age, job and friends");
+// }
+
+
+// nombre.location = "Spain";
+// nombre["profile web"] = "www.google.com";
+// console.log(nombre);
+
+
+//Challenge
+
+//"Juan has 3 friends, and his best friend is calles Michael"
+
+
+// console.log(nombre["firstName"], "has", nombre.friends.length, "friends, and hist best friends is called", nombre.friends[0]);
+
+// console.log(`${nombre.firstName} has ${nombre.friends.length} friends, and his best friends is called ${nombre.friends[0]}`);
+
+
+// const nombre = {
+//     firstName: "Juan",
+//     lastName: "Rivero",
+//     birthYear: 1995,
+//     job: "Developer",
+//     friends: ["Michael", "Peter", "Steven"],
+//     hadDriversLicense: true,
+
+//     // calcAge: function (birthYear){
+//     //     return 2022 - birthYear;
+//     // }
+
+//     // calcAge: function() {
+//     //     // console.log(this);
+//     //     return 2022 - this.birthYear;
+//     //  }
+
+//     calcAge: function() {
+//         this.age = 2022 - this.birthYear;
+//         return this.age;
+
+//      },
+
+//     getSummary: function() {
+//         return `${this.firstName} is a ${this.calcAge()} year old ${nombre.job}, and he has ${this.hadDriversLicense ? "a" : "no"} driver's License`
+
+// }
+
+// };
+
+// console.log(nombre.calcAge());
+// console.log(nombre.age);
+// console.log(nombre.getSummary());
+
+// Challenge
+//  "Juan is a 27 yerars old Developer, and he has or not a driver's license"
