@@ -166,12 +166,12 @@
 // console.log(juani[3]);
 
 
-const calcAge = function (birthYear){
-    return 2022 - birthYear;
-}
+// const calcAge = function (birthYear){
+//     return 2022 - birthYear;
+// }
 
 
-const years = [1998, 1967, 2002, 2010, 2018];
+// const years = [1998, 1967, 2002, 2010, 2018];
 
 
 // const age1 = calcAge((years[0]));
@@ -313,3 +313,115 @@ const years = [1998, 1967, 2002, 2010, 2018];
 
 // Challenge
 //  "Juan is a 27 yerars old Developer, and he has or not a driver's license"
+
+
+
+// for loop keeps runnig while condition is TRUE
+
+// for(let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lifting weights repetition ${rep}`);
+// }
+
+
+
+
+// const namesArray = [
+//     "Juan",
+//     "Rivero",
+//     2022-1995,
+//     "Developer",
+//     ["Michael", "Peter", "Steven"],
+//     true
+// ];
+
+// const types = [];
+
+// for(let i = 0; i < namesArray.length; i++){
+//     // Reading from namesArray
+//     console.log(namesArray[i], typeof namesArray[i]);
+
+//     //Filling types array
+//     // types[i] = typeof namesArray[i];
+//     types.push(typeof namesArray[i]);
+// }
+
+// console.log(types);
+
+// types[0] = "string";
+
+// const years = [1991, 2007, 1969, 2020];
+
+// const ages = [];
+
+// for(let i = 0; i < years.length; i++) {
+//     ages.push(2022 - years[i]);
+// }
+
+//  console.log(ages);
+
+// Continue and break
+
+
+// const namesArray = [
+//     "Juan",
+//     "Rivero",
+//     2022-1995,
+//     "Developer",
+//     ["Michael", "Peter", "Steven"],
+//     true
+// ];
+
+// for(let i = 0; i < namesArray.length; i++){
+//     if(typeof namesArray[i] !== "string") continue;
+
+//     console.log(namesArray[i], typeof namesArray[i]);
+// }
+
+//Break when find a number
+
+// for(let i = 0; i < namesArray.length; i++){
+//     if(typeof namesArray[i] === "number") break;
+
+//     console.log(namesArray[i], typeof namesArray[i]);
+// }
+
+
+// const juani = [
+//     "Juan",
+//     "Rivero",
+//     2022-1995,
+//     "Developer",
+//     ["Michael", "Peter", "Steven"],
+// ];
+
+
+// // en el ejercicio anterior comenzamos el loop desde el 0 al 4
+// //ahora lo haremos al revés del 4 al 0
+
+// for (let i = juani.length - 1; i>= 0; i--){
+// console.log(i,juani[i]);
+// }
+
+
+
+//loop inside of a loop
+
+// for (let excercise = 1; excercise < 4; excercise++){
+//     console.log(`---------------------Starting excercise ${excercise}---------------------`);
+
+//     for (let rep = 1; rep < 6; rep++){
+//         console.log(`Exercise ${excercise}: Lifting weight repetition ${rep}🏋🏿‍♂️`);
+//     }
+
+// }
+
+
+for(let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetition ${rep}`);
+}
+
+let rep = 1;
+while (rep <= 10){
+    console.log(`Lifting weights repetition ${rep}`);
+    rep++;
+}
